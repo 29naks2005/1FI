@@ -1,20 +1,27 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Full Stack Internship Assignment Backend",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node index.js",
+    "start": "node index.js",
+    "seed": "prisma db seed"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Nakul Sharma",
   "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
-    "@prisma/client": "^5.16.0",
+    "@prisma/client": "5.16.0",
     "cors": "^2.8.6",
     "dotenv": "^17.3.1",
-    "express": "^5.2.1",
-    "prisma": "^5.16.0"
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "prisma": "5.16.0"
   }
 }
