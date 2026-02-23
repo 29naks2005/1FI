@@ -2,11 +2,11 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "Full Stack Internship Assignment Backend",
-  "main": "index.js",
+  "main": "src/server.js",
   "type": "commonjs",
   "scripts": {
-    "dev": "node index.js",
-    "start": "node index.js",
+    "dev": "node src/server.js",
+    "start": "node src/server.js",
     "seed": "prisma db seed"
   },
   "prisma": {
