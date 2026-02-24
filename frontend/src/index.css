@@ -1,73 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+/* ── Design Tokens ─────────────────────────────────────── */
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  --primary: #00d4ff;
+  --primary-dark: #00a8cc;
+  --primary-light: #e0f9ff;
+  --primary-glow: rgba(0, 212, 255, 0.25);
+  --accent: #0099ff;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  --bg: #ffffff;
+  --bg-secondary: #f4f9fc;
+  --bg-card: #ffffff;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
+  --text: #1a2b3c;
+  --text-secondary: #5a6f82;
+  --text-muted: #8fa3b5;
+
+  --border: #e2eaf0;
+  --shadow-sm: 0 2px 8px rgba(0, 60, 100, 0.06);
+  --shadow-md: 0 4px 20px rgba(0, 60, 100, 0.08);
+  --shadow-lg: 0 8px 40px rgba(0, 60, 100, 0.12);
+  --shadow-glow: 0 4px 30px rgba(0, 212, 255, 0.15);
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: 0.15s ease;
+
+  --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --max-width: 1280px;
+  --nav-height: 72px;
+}
+
+/* ── Global Reset ──────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-
-a:hover {
-  color: #535bf2;
-}
-
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+  font-family: var(--font);
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color var(--transition-fast);
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+  font-family: var(--font);
   cursor: pointer;
-  transition: border-color 0.25s;
+  border: none;
+  outline: none;
+  background: none;
 }
 
-button:hover {
-  border-color: #646cff;
+img {
+  max-width: 100%;
+  display: block;
 }
 
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+ul,
+ol {
+  list-style: none;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
+/* ── Utility ───────────────────────────────────────────── */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
 
-  a:hover {
-    color: #747bff;
-  }
+/* ── Scrollbar removed per user request ──────────────────── */
 
-  button {
-    background-color: #f9f9f9;
-  }
+/* ── Selection ─────────────────────────────────────────── */
+::selection {
+  background: var(--primary);
+  color: #fff;
 }

@@ -18,14 +18,14 @@ async function main() {
           {
             color: "Silver",
             storage: "256GB",
-            imageUrl: "https://via.placeholder.com/300",
+            imageUrl: "https://m.media-amazon.com/images/I/616-Eh2FbPL._AC_UF894,1000_QL80_.jpg",
             price: 139900,
             isDefault: true
           },
           {
-            color: "Black",
+            color: "Cosmic Orange",
             storage: "512GB",
-            imageUrl: "https://via.placeholder.com/300",
+            imageUrl: "https://m.media-amazon.com/images/I/71JGCn1z1TL._AC_UF894,1000_QL80_.jpg",
             price: 149900
           }
         ]
@@ -61,14 +61,14 @@ async function main() {
           {
             color: "Titanium Gray",
             storage: "256GB",
-            imageUrl: "https://via.placeholder.com/300",
+            imageUrl: "https://images.samsung.com/in/smartphones/galaxy-s24-ultra/images/galaxy-s24-ultra-highlights-color-titanium-gray-back-mo.jpg?imbypass=true",
             price: 119999,
             isDefault: true
           },
           {
             color: "Phantom Black",
             storage: "512GB",
-            imageUrl: "https://via.placeholder.com/300",
+            imageUrl: "https://images.samsung.com/in/smartphones/galaxy-s24-ultra/images/galaxy-s24-ultra-highlights-color-titanium-black-back-mo.jpg?imbypass=true",
             price: 129999
           }
         ]
@@ -104,14 +104,14 @@ async function main() {
           {
             color: "Emerald Green",
             storage: "128GB",
-            imageUrl: "https://via.placeholder.com/300",
+            imageUrl: "https://m.media-amazon.com/images/I/717Qo4MH97L._AC_UF1000,1000_QL80_.jpg",
             price: 64999,
             isDefault: true
           },
           {
             color: "Black",
             storage: "256GB",
-            imageUrl: "https://via.placeholder.com/300",
+            imageUrl: "https://m.media-amazon.com/images/I/71o8VehMHXL._AC_UF1000,1000_QL80_.jpg",
             price: 69999
           }
         ]
@@ -129,6 +129,50 @@ async function main() {
             interestRate: 5.5,
             monthlyAmount: 5800,
             cashback: 0
+          }
+        ]
+      }
+    }
+  });
+
+  await prisma.product.create({
+    data: {
+      name: "Google Pixel 9 Pro",
+      slug: "google-pixel-9-pro",
+      description: "Experience the magic of Google AI with Pixel 9 Pro.",
+      mrp: 109999,
+      basePrice: 99999,
+      variants: {
+        create: [
+          {
+            color: "Obsidian",
+            storage: "256GB",
+            imageUrl: "https://rukminim2.flixcart.com/image/480/640/xif0q/mobile/t/b/i/-original-imahggexgphcbyja.jpeg?q=90",
+            price: 99999,
+            isDefault: true
+          },
+          {
+            color: "Porcelain",
+            storage: "256GB",
+            imageUrl: "https://m.media-amazon.com/images/I/51hMSDdGAtL._AC_UF1000,1000_QL80_.jpg",
+            price: 99999,
+            isDefault: true
+          }
+        ]
+      },
+      emiPlans: {
+        create: [
+          {
+            tenureMonths: 12,
+            interestRate: 0,
+            monthlyAmount: 8333,
+            cashback: 4000
+          },
+          {
+            tenureMonths: 12,
+            interestRate: 0,
+            monthlyAmount: 8333,
+            cashback: 4000
           }
         ]
       }

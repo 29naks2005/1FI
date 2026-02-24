@@ -3,7 +3,8 @@ const prisma = require("../../config/prisma");
 const getAllProducts = async () => {
   const products = await prisma.product.findMany({
     include: {
-      variants: true
+      variants: true,
+      emiPlans: true
     }
   });
 

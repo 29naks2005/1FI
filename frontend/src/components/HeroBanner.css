@@ -1,0 +1,200 @@
+.hero-banner {
+    position: relative;
+    width: 100%;
+    height: 630px;
+    overflow: hidden;
+}
+
+.slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #1a2b3c;
+    display: flex;
+    align-items: center;
+}
+
+.slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.slide-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0.65) 0%,
+            rgba(0, 0, 0, 0.4) 45%,
+            transparent 75%);
+}
+
+.slide-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 40px 0 40px 48px;
+    max-width: 600px;
+    margin-left: 40px;
+}
+
+.slide-tag {
+    display: inline-block;
+    width: fit-content;
+    padding: 6px 18px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+    background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+    border-radius: 4px;
+}
+
+.slide-headline {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.slide-sub {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.slide-big {
+    font-family: 'Poppins', sans-serif;
+    font-size: 5rem;
+    font-weight: 900;
+    color: #ffdd57;
+    line-height: 1;
+    letter-spacing: -2px;
+    text-shadow: 0 3px 16px rgba(0, 0, 0, 0.3);
+}
+
+.slide-desc {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+}
+
+.shop-now-btn {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    gap: 8px;
+    padding: 11px 28px;
+    margin-top: 6px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 212, 255, 0.25);
+    transition: all 0.3s ease;
+}
+
+.shop-now-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(0, 212, 255, 0.35);
+}
+
+.arrow-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    color: var(--text);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: all 0.15s ease;
+}
+
+.arrow-btn:hover {
+    background: #fff;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.arrow-btn.left {
+    left: 16px;
+}
+
+.arrow-btn.right {
+    right: 16px;
+}
+
+.dots {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.15);
+    transition: all 0.2s ease;
+}
+
+.dot.active {
+    background: var(--primary);
+    width: 28px;
+    border-radius: 5px;
+}
+
+@media (max-width: 720px) {
+    .hero-banner {
+        height: 240px;
+    }
+
+    .slide-big {
+        font-size: 2.2rem;
+    }
+
+    .slide-sub {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-banner {
+        height: 210px;
+    }
+
+    .slide-big {
+        font-size: 1.8rem;
+    }
+
+    .arrow-btn {
+        width: 32px;
+        height: 32px;
+    }
+}
