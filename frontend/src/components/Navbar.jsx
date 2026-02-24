@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { CreditCard, User, Search, Menu, X } from 'lucide-react';
+import { CreditCard, User, Menu, X } from 'lucide-react';
 import './Navbar.css';
 
 function Navbar() {
@@ -20,16 +20,7 @@ function Navbar() {
                         <span className="brand-accent">FI</span>
                     </Link>
 
-                    <div className="search-box">
-                        <input
-                            type="text"
-                            placeholder="Search for TV, Mobiles, Headphones & more"
-                            className="search-input"
-                        />
-                        <button className="search-btn">
-                            <Search size={20} />
-                        </button>
-                    </div>
+
 
                     <div className="nav-actions">
                         <a href="#" className="nav-link">
