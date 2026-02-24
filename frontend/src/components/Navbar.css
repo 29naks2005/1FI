@@ -150,6 +150,7 @@
 .category-bar-inner {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     height: 46px;
     overflow-x: auto;

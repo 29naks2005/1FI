@@ -16,12 +16,9 @@ function Navbar() {
             <div className="top-bar">
                 <div className="top-bar-inner container">
                     <Link to="/" className="brand">
-                        <span className="brand-name">1</span>
+                        <span className="brand-name">1-</span>
                         <span className="brand-accent">FI</span>
                     </Link>
-
-
-
                     <div className="nav-actions">
                         <a href="#" className="nav-link">
                             <CreditCard size={18} />
@@ -41,9 +38,6 @@ function Navbar() {
 
             <nav className={`category-bar ${menuOpen ? 'open' : ''}`}>
                 <div className="category-bar-inner container">
-                    <button className="menu-icon">
-                        <Menu size={20} />
-                    </button>
                     <ul className="category-list">
                         {categories.map(cat => {
                             const slug = cat.toLowerCase().replace(/&/g, '').replace(/,/g, '').replace(/\s+/g, '-').replace(/-+/g, '-');

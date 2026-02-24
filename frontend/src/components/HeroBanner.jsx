@@ -63,7 +63,15 @@ function HeroBanner() {
                                 <span className="slide-sub">{slide.after}</span>
                             </div>
                             <p className="slide-desc">{slide.desc}</p>
-                            <button className="shop-now-btn">
+                            <button
+                                className="shop-now-btn"
+                                onClick={() => {
+                                    const productsSection = document.getElementById('products');
+                                    if (productsSection) {
+                                        productsSection.scrollIntoView({ behavior: 'smooth' });
+                                    }
+                                }}
+                            >
                                 Shop Now
                                 <ArrowRight size={16} />
                             </button>
