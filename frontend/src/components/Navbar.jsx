@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { CreditCard, User, Search, Menu, X } from 'lucide-react';
 import './Navbar.css';
 
@@ -14,10 +15,10 @@ function Navbar() {
         <header className="navbar">
             <div className="top-bar">
                 <div className="top-bar-inner container">
-                    <a href="/" className="brand">
+                    <Link to="/" className="brand">
                         <span className="brand-name">1</span>
                         <span className="brand-accent">FI</span>
-                    </a>
+                    </Link>
 
                     <div className="search-box">
                         <input
@@ -53,11 +54,14 @@ function Navbar() {
                         <Menu size={20} />
                     </button>
                     <ul className="category-list">
-                        {categories.map(cat => (
-                            <li key={cat}>
-                                <a href="#" className="category-link">{cat}</a>
-                            </li>
-                        ))}
+                        {categories.map(cat => {
+                            const slug = cat.toLowerCase().replace(/&/g, '').replace(/,/g, '').replace(/\s+/g, '-').replace(/-+/g, '-');
+                            return (
+                                <li key={cat}>
+                                    <Link to={`/category/${slug}`} className="category-link">{cat}</Link>
+                                </li>
+                            );
+                        })}
                     </ul>
                 </div>
             </nav>
