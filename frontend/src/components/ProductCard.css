@@ -1,4 +1,7 @@
 .product-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
     background: #fff;
     border-radius: 12px;
     border: 1px solid var(--border);
@@ -81,7 +84,6 @@
     line-height: 1.4;
     margin-bottom: 8px;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }

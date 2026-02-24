@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './ProductCard.css';
 
 function ProductCard({ product }) {
@@ -14,7 +15,7 @@ function ProductCard({ product }) {
     };
 
     return (
-        <div className="product-card">
+        <Link to={`/product/${product.slug}`} className="product-card">
             <div className="card-image">
                 <img
                     src={defaultVariant?.imageUrl || 'https://via.placeholder.com/200'}
@@ -48,7 +49,7 @@ function ProductCard({ product }) {
                     )}
                 </div>
             </div>
-        </div>
+        </Link>
     );
 }
 

@@ -32,18 +32,13 @@ async function main() {
       },
       emiPlans: {
         create: [
-          {
-            tenureMonths: 12,
-            interestRate: 0,
-            monthlyAmount: 11658,
-            cashback: 5000
-          },
-          {
-            tenureMonths: 24,
-            interestRate: 10.5,
-            monthlyAmount: 7200,
-            cashback: 0
-          }
+          { tenureMonths: 3, interestRate: 0, monthlyAmount: 44967, cashback: 7500 },
+          { tenureMonths: 6, interestRate: 0, monthlyAmount: 22483, cashback: 7500 },
+          { tenureMonths: 12, interestRate: 0, monthlyAmount: 11242, cashback: 7500 },
+          { tenureMonths: 24, interestRate: 0, monthlyAmount: 5621, cashback: 7500 },
+          { tenureMonths: 36, interestRate: 10.5, monthlyAmount: 4297, cashback: 7500 },
+          { tenureMonths: 48, interestRate: 10.5, monthlyAmount: 3385, cashback: 7500 },
+          { tenureMonths: 60, interestRate: 10.5, monthlyAmount: 2842, cashback: 7500 },
         ]
       }
     }
@@ -61,32 +56,25 @@ async function main() {
           {
             color: "Titanium Gray",
             storage: "256GB",
-            imageUrl: "https://images.samsung.com/in/smartphones/galaxy-s24-ultra/images/galaxy-s24-ultra-highlights-color-titanium-gray-back-mo.jpg?imbypass=true",
+            imageUrl: "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/Communication/Mobiles/Images/303838_7_msdywx.png?tr=w-1000",
             price: 119999,
             isDefault: true
           },
           {
             color: "Phantom Black",
             storage: "512GB",
-            imageUrl: "https://images.samsung.com/in/smartphones/galaxy-s24-ultra/images/galaxy-s24-ultra-highlights-color-titanium-black-back-mo.jpg?imbypass=true",
+            imageUrl: "https://media.tatacroma.com/Croma%20Assets/Communication/Mobiles/Images/303840_7_a33yp1.png",
             price: 129999
           }
         ]
       },
       emiPlans: {
         create: [
-          {
-            tenureMonths: 12,
-            interestRate: 0,
-            monthlyAmount: 9999,
-            cashback: 3000
-          },
-          {
-            tenureMonths: 18,
-            interestRate: 8.5,
-            monthlyAmount: 7500,
-            cashback: 0
-          }
+          { tenureMonths: 3, interestRate: 0, monthlyAmount: 39999, cashback: 5000 },
+          { tenureMonths: 6, interestRate: 0, monthlyAmount: 19999, cashback: 5000 },
+          { tenureMonths: 12, interestRate: 0, monthlyAmount: 9999, cashback: 5000 },
+          { tenureMonths: 24, interestRate: 0, monthlyAmount: 4999, cashback: 5000 },
+          { tenureMonths: 36, interestRate: 10.5, monthlyAmount: 3850, cashback: 5000 },
         ]
       }
     }
@@ -118,18 +106,10 @@ async function main() {
       },
       emiPlans: {
         create: [
-          {
-            tenureMonths: 6,
-            interestRate: 0,
-            monthlyAmount: 10833,
-            cashback: 2000
-          },
-          {
-            tenureMonths: 12,
-            interestRate: 5.5,
-            monthlyAmount: 5800,
-            cashback: 0
-          }
+          { tenureMonths: 3, interestRate: 0, monthlyAmount: 21666, cashback: 3000 },
+          { tenureMonths: 6, interestRate: 0, monthlyAmount: 10833, cashback: 3000 },
+          { tenureMonths: 12, interestRate: 0, monthlyAmount: 5416, cashback: 3000 },
+          { tenureMonths: 24, interestRate: 10.5, monthlyAmount: 3100, cashback: 3000 },
         ]
       }
     }
@@ -162,18 +142,11 @@ async function main() {
       },
       emiPlans: {
         create: [
-          {
-            tenureMonths: 12,
-            interestRate: 0,
-            monthlyAmount: 8333,
-            cashback: 4000
-          },
-          {
-            tenureMonths: 12,
-            interestRate: 0,
-            monthlyAmount: 8333,
-            cashback: 4000
-          }
+          { tenureMonths: 3, interestRate: 0, monthlyAmount: 33333, cashback: 4000 },
+          { tenureMonths: 6, interestRate: 0, monthlyAmount: 16666, cashback: 4000 },
+          { tenureMonths: 12, interestRate: 0, monthlyAmount: 8333, cashback: 4000 },
+          { tenureMonths: 24, interestRate: 0, monthlyAmount: 4166, cashback: 4000 },
+          { tenureMonths: 36, interestRate: 10.5, monthlyAmount: 3250, cashback: 4000 },
         ]
       }
     }
