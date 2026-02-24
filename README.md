@@ -1,8 +1,6 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <img src="https://media.licdn.com/dms/image/v2/C560BAQFFTzZlY1lYpQ/company-logo_200_200/company-logo_200_200/0/1630656041189/1fi_logo?e=2147483647&v=beta&t=A30y185J4YJ4s7tW2xZQQeA1R9OeyhL3eK8NZZZ8c" alt="Logo" width="100" height="100">
-
   <h1 align="center">1FI Full Stack Internship Assignment</h1>
 
   <p align="center">
@@ -49,8 +47,6 @@
 ## 🚀 About The Project
 This project is an internship assignment for 1FI, demonstrating a modern, full-stack e-commerce application. It includes a responsive frontend built with React and Vite, beautifully structured with custom CSS and Lucide React icons. On the backend, an Express server connects to a PostgreSQL database via Prisma ORM to serve product data, specific variant configurations (e.g., color, storage), and dynamic EMI plans.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 ---
 
 ## 🛠 Tech Stack
@@ -66,9 +62,7 @@ This project is an internship assignment for 1FI, demonstrating a modern, full-s
 - **Runtime:** Node.js
 - **Framework:** Express.js
 - **Database ORM:** Prisma
-- **Database:** PostgreSQL (via Supabase/Neon)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
+- **Database:** PostgreSQL (via Supabase)
 
 ---
 
@@ -106,8 +100,6 @@ Stores financing/EMI plan options for products.
 - `monthlyAmount` (Float)
 - `cashback` (Float)
 - *Relations:* Belongs to `Product`
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 ---
 
@@ -164,8 +156,6 @@ Fetches detailed information about a specific product retrieved by its unique sl
   "emiPlans": [...]
 }
 ```
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 ---
 
