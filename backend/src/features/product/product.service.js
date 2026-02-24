@@ -12,13 +12,31 @@ const getAllProducts = async () => {
 };
 
 const getProductBySlug = async (slug) => {
-  const product = await prisma.product.findUnique({
+  let product = await prisma.product.findUnique({
     where: { slug },
     include: {
       variants: true,
       emiPlans: true
     }
   });
+  if (!product) {
+    const variant = await prisma.productVariant.findUnique({
+      where: { slug },
+    });
+
+    if (variant) {
+      product = await prisma.product.findUnique({
+        where: { id: variant.productId },
+        include: {
+          variants: true,
+          emiPlans: true
+        }
+      });
+      if (product) {
+        product.matchedVariantSlug = slug;
+      }
+    }
+  }
 
   return product;
 };

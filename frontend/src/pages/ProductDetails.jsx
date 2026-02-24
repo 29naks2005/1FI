@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { Truck,RefreshCw, Award, Lock } from 'lucide-react';
+import { Truck, RefreshCw, Award, Lock } from 'lucide-react';
 import api from '../api/api';
 import './ProductDetails.css';
 
@@ -47,8 +47,16 @@ function ProductDetails() {
 
                 setProduct(productData);
 
-                const defaultVariant = productData.variants?.find(v => v.isDefault) || productData.variants?.[0];
-                setSelectedVariant(defaultVariant);
+                let targetVariant;
+                if (productData.matchedVariantSlug) {
+                    targetVariant = productData.variants?.find(v => v.slug === productData.matchedVariantSlug);
+                }
+
+                if (!targetVariant) {
+                    targetVariant = productData.variants?.find(v => v.isDefault) || productData.variants?.[0];
+                }
+
+                setSelectedVariant(targetVariant);
 
                 if (productData.emiPlans && productData.emiPlans.length > 0) {
                     const defaultEmi = productData.emiPlans.find(plan => plan.tenureMonths === 12) || productData.emiPlans[0];
@@ -116,7 +124,7 @@ function ProductDetails() {
                                             key={variant.id}
                                             className={`color-circle ${selectedVariant?.id === variant.id ? 'selected-color' : ''}`}
                                             style={{ backgroundColor: getHexForColorName(variant.color) }}
-                                            onClick={() => setSelectedVariant(variant)}
+                                            onClick={() => navigate(`/product/${variant.slug}`)}
                                             title={variant.color}
                                         />
                                     ))}

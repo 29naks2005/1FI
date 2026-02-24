@@ -23,6 +23,7 @@ async function main() {
       variants: {
         create: [
           {
+            slug: "iphone-17-pro-silver-256gb",
             color: "Silver",
             storage: "256GB",
             imageUrl: "https://m.media-amazon.com/images/I/616-Eh2FbPL._AC_UF894,1000_QL80_.jpg",
@@ -30,6 +31,7 @@ async function main() {
             isDefault: true
           },
           {
+            slug: "iphone-17-pro-cosmic-orange-512gb",
             color: "Cosmic Orange",
             storage: "512GB",
             imageUrl: "https://m.media-amazon.com/images/I/71JGCn1z1TL._AC_UF894,1000_QL80_.jpg",
@@ -68,6 +70,7 @@ async function main() {
       variants: {
         create: [
           {
+            slug: "samsung-s24-ultra-titanium-gray-256gb",
             color: "Titanium Gray",
             storage: "256GB",
             imageUrl: "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/Communication/Mobiles/Images/303838_7_msdywx.png?tr=w-1000",
@@ -75,6 +78,7 @@ async function main() {
             isDefault: true
           },
           {
+            slug: "samsung-s24-ultra-phantom-black-512gb",
             color: "Phantom Black",
             storage: "512GB",
             imageUrl: "https://media.tatacroma.com/Croma%20Assets/Communication/Mobiles/Images/303840_7_a33yp1.png",
@@ -111,6 +115,7 @@ async function main() {
       variants: {
         create: [
           {
+            slug: "oneplus-12-emerald-green-128gb",
             color: "Emerald Green",
             storage: "128GB",
             imageUrl: "https://m.media-amazon.com/images/I/717Qo4MH97L._AC_UF1000,1000_QL80_.jpg",
@@ -118,6 +123,7 @@ async function main() {
             isDefault: true
           },
           {
+            slug: "oneplus-12-black-256gb",
             color: "Black",
             storage: "256GB",
             imageUrl: "https://m.media-amazon.com/images/I/71o8VehMHXL._AC_UF1000,1000_QL80_.jpg",
@@ -153,6 +159,7 @@ async function main() {
       variants: {
         create: [
           {
+            slug: "google-pixel-9-pro-obsidian-256gb",
             color: "Obsidian",
             storage: "256GB",
             imageUrl: "https://rukminim2.flixcart.com/image/480/640/xif0q/mobile/t/b/i/-original-imahggexgphcbyja.jpeg?q=90",
@@ -160,6 +167,7 @@ async function main() {
             isDefault: true
           },
           {
+            slug: "google-pixel-9-pro-porcelain-256gb",
             color: "Porcelain",
             storage: "256GB",
             imageUrl: "https://m.media-amazon.com/images/I/51hMSDdGAtL._AC_UF1000,1000_QL80_.jpg",

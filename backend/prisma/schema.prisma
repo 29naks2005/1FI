@@ -30,6 +30,7 @@ model Product {
 
 model ProductVariant {
   id         Int      @id @default(autoincrement())
+  slug       String   @unique
   color      String
   storage    String
   imageUrl   String

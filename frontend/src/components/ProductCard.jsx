@@ -15,10 +15,10 @@ function ProductCard({ product }) {
     };
 
     return (
-        <Link to={`/product/${product.slug}`} className="product-card">
+        <Link to={`/product/${defaultVariant?.slug || product.slug}`} className="product-card">
             <div className="card-image">
                 <img
-                    src={defaultVariant?.imageUrl || 'https://via.placeholder.com/200'}
+                    src={defaultVariant.imageUrl}
                     alt={product.name}
                 />
                 {bestEmi && bestEmi.interestRate === 0 && (
