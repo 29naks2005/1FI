@@ -13,6 +13,13 @@ async function main() {
       description: "Latest Apple iPhone 17 Pro with powerful performance.",
       mrp: 149900,
       basePrice: 139900,
+      specs: [
+        "Storage: 256 GB / 512 GB",
+        "Color: Silver / Cosmic Orange",
+        "Front Camera: 18MP",
+        "Front Camera Features: 18MP front cam with autofocus, Center Stage, Night mode, HDR 5, portraits, Animoji, 4K stabilized video, spatial audio, and dual capture features.",
+        "Rear Camera: 48MP + 48MP + 48MP"
+      ],
       variants: {
         create: [
           {
@@ -51,6 +58,13 @@ async function main() {
       description: "Flagship Samsung phone with premium features.",
       mrp: 129999,
       basePrice: 119999,
+      specs: [
+        "Storage: 256 GB / 512 GB",
+        "Color: Titanium Gray / Phantom Black",
+        "Front Camera: 12MP",
+        "Front Camera Features: Dual Pixel AF, Nightography, Super HDR, 4K video recording at 60fps.",
+        "Rear Camera: 200MP + 50MP + 12MP + 10MP"
+      ],
       variants: {
         create: [
           {
@@ -87,6 +101,13 @@ async function main() {
       description: "High performance smartphone from OnePlus.",
       mrp: 69999,
       basePrice: 64999,
+      specs: [
+        "Storage: 128 GB / 256 GB",
+        "Color: Emerald Green / Black",
+        "Front Camera: 32MP",
+        "Front Camera Features: Advanced HDR, portrait mode, 4K video support, AI beautification.",
+        "Rear Camera: 50MP + 64MP + 48MP Hasselblad Camera"
+      ],
       variants: {
         create: [
           {
@@ -122,6 +143,13 @@ async function main() {
       description: "Experience the magic of Google AI with Pixel 9 Pro.",
       mrp: 109999,
       basePrice: 99999,
+      specs: [
+        "Storage: 256 GB",
+        "Color: Obsidian / Porcelain",
+        "Front Camera: 42MP",
+        "Front Camera Features: AF, Face Unlock, Magic Eraser, Best Take, Night Sight, Super Res Zoom.",
+        "Rear Camera: 50MP + 48MP + 48MP"
+      ],
       variants: {
         create: [
           {

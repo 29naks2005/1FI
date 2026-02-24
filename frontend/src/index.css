@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap');
 
-/* ── Design Tokens ─────────────────────────────────────── */
+
 :root {
   --primary: #00d4ff;
   --primary-dark: #00a8cc;
@@ -35,7 +35,7 @@
   --nav-height: 72px;
 }
 
-/* ── Global Reset ──────────────────────────────────────── */
+
 *,
 *::before,
 *::after {
@@ -83,16 +83,16 @@ ol {
   list-style: none;
 }
 
-/* ── Utility ───────────────────────────────────────────── */
+
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 24px;
 }
 
-/* ── Scrollbar removed per user request ──────────────────── */
 
-/* ── Selection ─────────────────────────────────────────── */
+
+
 ::selection {
   background: var(--primary);
   color: #fff;

@@ -21,6 +21,7 @@ model Product {
   description String
   mrp         Float
   basePrice   Float
+  specs       Json?
   variants    ProductVariant[]
   emiPlans    EmiPlan[]
   createdAt   DateTime  @default(now())
