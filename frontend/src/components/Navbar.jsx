@@ -5,6 +5,20 @@ import './Navbar.css';
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+    const handleEmiClick = (e) => {
+        e.preventDefault();
+        alert('✅ No pending EMI found for your account.');
+    };
+
+    const handleLoginClick = (e) => {
+        e.preventDefault();
+        if (!isLoggedIn) {
+            alert('🎉 Successfully Signed In!');
+            setIsLoggedIn(true);
+        }
+    };
 
     const categories = [
         'Mobiles', 'Electronics', 'TV, AC & Appliances', 'Kitchen & Home',
@@ -20,13 +34,13 @@ function Navbar() {
                         <span className="brand-accent">FI</span>
                     </Link>
                     <div className="nav-actions">
-                        <a href="#" className="nav-link">
+                        <a href="#" className="nav-link" onClick={handleEmiClick}>
                             <CreditCard size={18} />
                             <span>Pay EMI</span>
                         </a>
-                        <a href="#" className="signup-btn">
+                        <a href="#" className="signup-btn" onClick={handleLoginClick}>
                             <User size={18} />
-                            <span>Sign-up</span>
+                            {!isLoggedIn && <span>Sign-up</span>}
                         </a>
                     </div>
 
