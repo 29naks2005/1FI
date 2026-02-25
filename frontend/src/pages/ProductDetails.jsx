@@ -172,7 +172,12 @@ function ProductDetails() {
 
                     {selectedEmiPlan && (
                         <div className="purchase-section">
-                            <button className="buy-button">
+                            <button
+                                className="buy-button"
+                                onClick={() => {
+                                    alert(`Success! 🎉\nCongratulations for buying ${product.name} on a ${selectedEmiPlan.tenureMonths}-month EMI plan at ${formatCurrency(Math.round(selectedEmiPlan.monthlyAmount))} per month.`);
+                                }}
+                            >
                                 Buy on {selectedEmiPlan.tenureMonths} month EMI
                             </button>
                         </div>
