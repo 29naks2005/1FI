@@ -105,7 +105,11 @@ Stores financing/EMI plan options for products.
 
 ## 🌐 API Endpoints
 
-The backend Express server currently exposes a robust `products` API endpoint. Base URL: `http://localhost:3000/api`
+The backend Express server is deployed on Render and exposes a robust `products` API endpoint.
+
+**Base URLs:**
+- **Production:** `https://onefi-lk9e.onrender.com/api`
+- **Local:** `http://localhost:3000/api`
 
 ### `GET /products`
 Fetches a list of all products, including their variants and EMI plans.
@@ -168,6 +172,9 @@ Follow these instructions to get a copy of the project up and running on your lo
 * A PostgreSQL database instance
 
 ### Installation & Setup
+
+> **Note:** The backend API is already hosted on Render (`https://onefi-lk9e.onrender.com/api`). If you only want to run the frontend and test the website using live data, you can entirely skip the **Backend Setup** and go directly to step 6 for **Frontend Setup**.
+> If you wish to run the backend server locally, follow all steps below.
 
 1. **Clone the repository** (if you haven't already):
    ```sh
